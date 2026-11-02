@@ -406,7 +406,7 @@ function logAccess(email, who){
 }
 
 /* Access window. Checked before any decryption is attempted. */
-const EXPIRES = "2026-10-31";
+const EXPIRES = "2026-12-31";
 function expired(){
   const d = new Date(EXPIRES + "T23:59:59Z");
   return isNaN(d) ? false : (Date.now() > d.getTime());
